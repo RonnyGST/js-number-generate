@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style/estilo.css">
+         <script type="text/javascript" src = "src/script.js"></script>
+         <title>Gerador de palavra-chave</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Gere sua senha ou número da sorte!</h1>
+            <h2>Insira o tamanho da sequência numérica ou senha</h2>
+            
+            <p><u>Insira a quantidade de caracteres de 4 à 25:</u></p>
+            
+            <!--Toda vez que o valor deste input for mudado, ele chamará esta função-->
+            <input type="number" min="4" max="25" id="numField" value="4" onchange="setNumber()"></br>
+        </header>
+        
+        
+        
+        <main>
+            <h2>Senha numérica</h2>
+            <button onclick="numberGenerate()" class="btn">Gerar</button>
+            <p id="keyNum"></p>
+            
+            
+            <h2>Senha alfa numérica</h2>
+            <button onclick="keywordGenerate()" class="btn">Gerar</button>
+            <p id="keyAlfaNum"></p>
+            
+            
+            <h2>Senha alfa numérica com símbolos </h2>
+            <button onclick = "symbolKeywordGenerate()" class="btn">Gerar</button>
+            <p id="keyAlfaNumSymbol"></p>
+            
+            
+            
+            <button onclick="reset()" id="btnReset">Reset</button>
+            <p id="aviso"></p>
+        </main>
+        
+        
+        <footer>
+            <P id="foot"><a href="https://github.com/RonnyGST" target="_blank" rel="noopener noreferrer">Para mais projetos como esse, visite meu portifólio</a></P>
+        </footer>
+    </body>
+</html>

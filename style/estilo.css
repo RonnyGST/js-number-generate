@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+.btn {
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#btnReset {
+    font-size: 30px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+}
+
+#foot {
+    text-align: right;
+}
